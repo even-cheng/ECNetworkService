@@ -1,0 +1,10 @@
+platform :ios, ‘9.0’
+
+target 'ECNetworkService' do
+
+pod 'AFNetworking'
+pod 'Mantle', '~> 2.1.0'                       #数据转模型
+pod 'YYCache'
+
+end
+

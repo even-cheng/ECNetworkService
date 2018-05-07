@@ -1,0 +1,757 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5564DD072071BF3000D6CA50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD062071BF3000D6CA50 /* AppDelegate.m */; };
+		5564DD0A2071BF3000D6CA50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD092071BF3000D6CA50 /* ViewController.m */; };
+		5564DD0D2071BF3000D6CA50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5564DD0B2071BF3000D6CA50 /* Main.storyboard */; };
+		5564DD0F2071BF3000D6CA50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5564DD0E2071BF3000D6CA50 /* Assets.xcassets */; };
+		5564DD122071BF3000D6CA50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5564DD102071BF3000D6CA50 /* LaunchScreen.storyboard */; };
+		5564DD152071BF3000D6CA50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD142071BF3000D6CA50 /* main.m */; };
+		5564DD1F2071BF3000D6CA50 /* ECNetworkServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD1E2071BF3000D6CA50 /* ECNetworkServiceTests.m */; };
+		5564DD2A2071BF3000D6CA50 /* ECNetworkServiceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD292071BF3000D6CA50 /* ECNetworkServiceUITests.m */; };
+		5564DD532071BF8C00D6CA50 /* ECBaseParamsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD3A2071BF7200D6CA50 /* ECBaseParamsModel.m */; };
+		5564DD542071BF8C00D6CA50 /* ECBaseResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD3C2071BF7200D6CA50 /* ECBaseResponseModel.m */; };
+		5564DD552071BF8C00D6CA50 /* ECModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD3E2071BF7200D6CA50 /* ECModel.m */; };
+		5564DD562071BF8C00D6CA50 /* EC_RequestError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD422071BF7200D6CA50 /* EC_RequestError.m */; };
+		5564DD572071BF8C00D6CA50 /* EC_RequestErrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD442071BF7200D6CA50 /* EC_RequestErrorUtils.m */; };
+		5564DD582071BF8C00D6CA50 /* ECBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD472071BF7200D6CA50 /* ECBaseRequest.m */; };
+		5564DD592071BF8C00D6CA50 /* ECHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD492071BF7200D6CA50 /* ECHTTPRequest.m */; };
+		5564DD5A2071BF8C00D6CA50 /* ECInterfacedConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD4B2071BF7200D6CA50 /* ECInterfacedConst.m */; };
+		5564DD5B2071BF8C00D6CA50 /* ECNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD4E2071BF7200D6CA50 /* ECNetworkCache.m */; };
+		5564DD5C2071BF8C00D6CA50 /* ECNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD502071BF7200D6CA50 /* ECNetworkHelper.m */; };
+		5564DD5D2071BF8C00D6CA50 /* ECServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD522071BF7200D6CA50 /* ECServer.m */; };
+		5564DD602071C8DC00D6CA50 /* ECConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD5E2071C8DC00D6CA50 /* ECConfig.m */; };
+		5564DD632071CA5B00D6CA50 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5564DD622071CA5B00D6CA50 /* TestModel.m */; };
+		588D3BDDA01382592FD805B0 /* libPods-ECNetworkService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 474586DACA3AE2F1741BEF91 /* libPods-ECNetworkService.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5564DD1B2071BF3000D6CA50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5564DCFA2071BF3000D6CA50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5564DD012071BF3000D6CA50;
+			remoteInfo = ECNetworkService;
+		};
+		5564DD262071BF3000D6CA50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5564DCFA2071BF3000D6CA50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5564DD012071BF3000D6CA50;
+			remoteInfo = ECNetworkService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03FB888E9BFC774AD52F083B /* Pods-ECNetworkService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECNetworkService.release.xcconfig"; path = "Pods/Target Support Files/Pods-ECNetworkService/Pods-ECNetworkService.release.xcconfig"; sourceTree = "<group>"; };
+		474586DACA3AE2F1741BEF91 /* libPods-ECNetworkService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ECNetworkService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5564DD022071BF3000D6CA50 /* ECNetworkService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECNetworkService.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5564DD052071BF3000D6CA50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5564DD062071BF3000D6CA50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5564DD082071BF3000D6CA50 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5564DD092071BF3000D6CA50 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5564DD0C2071BF3000D6CA50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5564DD0E2071BF3000D6CA50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5564DD112071BF3000D6CA50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5564DD132071BF3000D6CA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5564DD142071BF3000D6CA50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5564DD1A2071BF3000D6CA50 /* ECNetworkServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECNetworkServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5564DD1E2071BF3000D6CA50 /* ECNetworkServiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNetworkServiceTests.m; sourceTree = "<group>"; };
+		5564DD202071BF3000D6CA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5564DD252071BF3000D6CA50 /* ECNetworkServiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ECNetworkServiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5564DD292071BF3000D6CA50 /* ECNetworkServiceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNetworkServiceUITests.m; sourceTree = "<group>"; };
+		5564DD2B2071BF3000D6CA50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5564DD392071BF7200D6CA50 /* ECBaseParamsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECBaseParamsModel.h; sourceTree = "<group>"; };
+		5564DD3A2071BF7200D6CA50 /* ECBaseParamsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECBaseParamsModel.m; sourceTree = "<group>"; };
+		5564DD3B2071BF7200D6CA50 /* ECBaseResponseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECBaseResponseModel.h; sourceTree = "<group>"; };
+		5564DD3C2071BF7200D6CA50 /* ECBaseResponseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECBaseResponseModel.m; sourceTree = "<group>"; };
+		5564DD3D2071BF7200D6CA50 /* ECModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECModel.h; sourceTree = "<group>"; };
+		5564DD3E2071BF7200D6CA50 /* ECModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECModel.m; sourceTree = "<group>"; };
+		5564DD412071BF7200D6CA50 /* EC_RequestError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EC_RequestError.h; sourceTree = "<group>"; };
+		5564DD422071BF7200D6CA50 /* EC_RequestError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EC_RequestError.m; sourceTree = "<group>"; };
+		5564DD432071BF7200D6CA50 /* EC_RequestErrorUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EC_RequestErrorUtils.h; sourceTree = "<group>"; };
+		5564DD442071BF7200D6CA50 /* EC_RequestErrorUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EC_RequestErrorUtils.m; sourceTree = "<group>"; };
+		5564DD452071BF7200D6CA50 /* EC_RequestComplation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EC_RequestComplation.h; sourceTree = "<group>"; };
+		5564DD462071BF7200D6CA50 /* ECBaseRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECBaseRequest.h; sourceTree = "<group>"; };
+		5564DD472071BF7200D6CA50 /* ECBaseRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECBaseRequest.m; sourceTree = "<group>"; };
+		5564DD482071BF7200D6CA50 /* ECHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECHTTPRequest.h; sourceTree = "<group>"; };
+		5564DD492071BF7200D6CA50 /* ECHTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECHTTPRequest.m; sourceTree = "<group>"; };
+		5564DD4A2071BF7200D6CA50 /* ECInterfacedConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECInterfacedConst.h; sourceTree = "<group>"; };
+		5564DD4B2071BF7200D6CA50 /* ECInterfacedConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECInterfacedConst.m; sourceTree = "<group>"; };
+		5564DD4D2071BF7200D6CA50 /* ECNetworkCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNetworkCache.h; sourceTree = "<group>"; };
+		5564DD4E2071BF7200D6CA50 /* ECNetworkCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNetworkCache.m; sourceTree = "<group>"; };
+		5564DD4F2071BF7200D6CA50 /* ECNetworkHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNetworkHelper.h; sourceTree = "<group>"; };
+		5564DD502071BF7200D6CA50 /* ECNetworkHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNetworkHelper.m; sourceTree = "<group>"; };
+		5564DD512071BF7200D6CA50 /* ECServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECServer.h; sourceTree = "<group>"; };
+		5564DD522071BF7200D6CA50 /* ECServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECServer.m; sourceTree = "<group>"; };
+		5564DD5E2071C8DC00D6CA50 /* ECConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECConfig.m; sourceTree = "<group>"; };
+		5564DD5F2071C8DC00D6CA50 /* ECConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECConfig.h; sourceTree = "<group>"; };
+		5564DD612071CA5B00D6CA50 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		5564DD622071CA5B00D6CA50 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		A44E06F63D262C6652BE4B44 /* Pods-ECNetworkService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ECNetworkService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ECNetworkService/Pods-ECNetworkService.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5564DCFF2071BF3000D6CA50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				588D3BDDA01382592FD805B0 /* libPods-ECNetworkService.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5564DD172071BF3000D6CA50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5564DD222071BF3000D6CA50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		193F6266C486696D3F009FF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				474586DACA3AE2F1741BEF91 /* libPods-ECNetworkService.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5564DCF92071BF3000D6CA50 = {
+			isa = PBXGroup;
+			children = (
+				5564DD042071BF3000D6CA50 /* ECNetworkService */,
+				5564DD1D2071BF3000D6CA50 /* ECNetworkServiceTests */,
+				5564DD282071BF3000D6CA50 /* ECNetworkServiceUITests */,
+				5564DD032071BF3000D6CA50 /* Products */,
+				6970B743034AEB512BB16DB9 /* Pods */,
+				193F6266C486696D3F009FF8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5564DD032071BF3000D6CA50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5564DD022071BF3000D6CA50 /* ECNetworkService.app */,
+				5564DD1A2071BF3000D6CA50 /* ECNetworkServiceTests.xctest */,
+				5564DD252071BF3000D6CA50 /* ECNetworkServiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5564DD042071BF3000D6CA50 /* ECNetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				5564DD372071BF7200D6CA50 /* ECHTTPService */,
+				5564DD052071BF3000D6CA50 /* AppDelegate.h */,
+				5564DD062071BF3000D6CA50 /* AppDelegate.m */,
+				5564DD612071CA5B00D6CA50 /* TestModel.h */,
+				5564DD622071CA5B00D6CA50 /* TestModel.m */,
+				5564DD082071BF3000D6CA50 /* ViewController.h */,
+				5564DD092071BF3000D6CA50 /* ViewController.m */,
+				5564DD0B2071BF3000D6CA50 /* Main.storyboard */,
+				5564DD0E2071BF3000D6CA50 /* Assets.xcassets */,
+				5564DD102071BF3000D6CA50 /* LaunchScreen.storyboard */,
+				5564DD132071BF3000D6CA50 /* Info.plist */,
+				5564DD142071BF3000D6CA50 /* main.m */,
+			);
+			path = ECNetworkService;
+			sourceTree = "<group>";
+		};
+		5564DD1D2071BF3000D6CA50 /* ECNetworkServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				5564DD1E2071BF3000D6CA50 /* ECNetworkServiceTests.m */,
+				5564DD202071BF3000D6CA50 /* Info.plist */,
+			);
+			path = ECNetworkServiceTests;
+			sourceTree = "<group>";
+		};
+		5564DD282071BF3000D6CA50 /* ECNetworkServiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5564DD292071BF3000D6CA50 /* ECNetworkServiceUITests.m */,
+				5564DD2B2071BF3000D6CA50 /* Info.plist */,
+			);
+			path = ECNetworkServiceUITests;
+			sourceTree = "<group>";
+		};
+		5564DD372071BF7200D6CA50 /* ECHTTPService */ = {
+			isa = PBXGroup;
+			children = (
+				5564DD382071BF7200D6CA50 /* BaseModel */,
+				5564DD3F2071BF7200D6CA50 /* HttpRequest */,
+				5564DD4C2071BF7200D6CA50 /* NetworkHelper */,
+				5564DD512071BF7200D6CA50 /* ECServer.h */,
+				5564DD522071BF7200D6CA50 /* ECServer.m */,
+				5564DD4A2071BF7200D6CA50 /* ECInterfacedConst.h */,
+				5564DD4B2071BF7200D6CA50 /* ECInterfacedConst.m */,
+				5564DD5F2071C8DC00D6CA50 /* ECConfig.h */,
+				5564DD5E2071C8DC00D6CA50 /* ECConfig.m */,
+			);
+			path = ECHTTPService;
+			sourceTree = "<group>";
+		};
+		5564DD382071BF7200D6CA50 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				5564DD392071BF7200D6CA50 /* ECBaseParamsModel.h */,
+				5564DD3A2071BF7200D6CA50 /* ECBaseParamsModel.m */,
+				5564DD3B2071BF7200D6CA50 /* ECBaseResponseModel.h */,
+				5564DD3C2071BF7200D6CA50 /* ECBaseResponseModel.m */,
+				5564DD3D2071BF7200D6CA50 /* ECModel.h */,
+				5564DD3E2071BF7200D6CA50 /* ECModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		5564DD3F2071BF7200D6CA50 /* HttpRequest */ = {
+			isa = PBXGroup;
+			children = (
+				5564DD402071BF7200D6CA50 /* Exception */,
+				5564DD452071BF7200D6CA50 /* EC_RequestComplation.h */,
+				5564DD462071BF7200D6CA50 /* ECBaseRequest.h */,
+				5564DD472071BF7200D6CA50 /* ECBaseRequest.m */,
+				5564DD482071BF7200D6CA50 /* ECHTTPRequest.h */,
+				5564DD492071BF7200D6CA50 /* ECHTTPRequest.m */,
+			);
+			path = HttpRequest;
+			sourceTree = "<group>";
+		};
+		5564DD402071BF7200D6CA50 /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				5564DD412071BF7200D6CA50 /* EC_RequestError.h */,
+				5564DD422071BF7200D6CA50 /* EC_RequestError.m */,
+				5564DD432071BF7200D6CA50 /* EC_RequestErrorUtils.h */,
+				5564DD442071BF7200D6CA50 /* EC_RequestErrorUtils.m */,
+			);
+			path = Exception;
+			sourceTree = "<group>";
+		};
+		5564DD4C2071BF7200D6CA50 /* NetworkHelper */ = {
+			isa = PBXGroup;
+			children = (
+				5564DD4D2071BF7200D6CA50 /* ECNetworkCache.h */,
+				5564DD4E2071BF7200D6CA50 /* ECNetworkCache.m */,
+				5564DD4F2071BF7200D6CA50 /* ECNetworkHelper.h */,
+				5564DD502071BF7200D6CA50 /* ECNetworkHelper.m */,
+			);
+			path = NetworkHelper;
+			sourceTree = "<group>";
+		};
+		6970B743034AEB512BB16DB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A44E06F63D262C6652BE4B44 /* Pods-ECNetworkService.debug.xcconfig */,
+				03FB888E9BFC774AD52F083B /* Pods-ECNetworkService.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5564DD012071BF3000D6CA50 /* ECNetworkService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5564DD2E2071BF3000D6CA50 /* Build configuration list for PBXNativeTarget "ECNetworkService" */;
+			buildPhases = (
+				A8200E6531E6226B680BC09C /* [CP] Check Pods Manifest.lock */,
+				5564DCFE2071BF3000D6CA50 /* Sources */,
+				5564DCFF2071BF3000D6CA50 /* Frameworks */,
+				5564DD002071BF3000D6CA50 /* Resources */,
+				EAC62916012E5B3F0311BE88 /* [CP] Embed Pods Frameworks */,
+				A8663C46C3E6C8B72EB7DACF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ECNetworkService;
+			productName = ECNetworkService;
+			productReference = 5564DD022071BF3000D6CA50 /* ECNetworkService.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5564DD192071BF3000D6CA50 /* ECNetworkServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5564DD312071BF3000D6CA50 /* Build configuration list for PBXNativeTarget "ECNetworkServiceTests" */;
+			buildPhases = (
+				5564DD162071BF3000D6CA50 /* Sources */,
+				5564DD172071BF3000D6CA50 /* Frameworks */,
+				5564DD182071BF3000D6CA50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5564DD1C2071BF3000D6CA50 /* PBXTargetDependency */,
+			);
+			name = ECNetworkServiceTests;
+			productName = ECNetworkServiceTests;
+			productReference = 5564DD1A2071BF3000D6CA50 /* ECNetworkServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5564DD242071BF3000D6CA50 /* ECNetworkServiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5564DD342071BF3000D6CA50 /* Build configuration list for PBXNativeTarget "ECNetworkServiceUITests" */;
+			buildPhases = (
+				5564DD212071BF3000D6CA50 /* Sources */,
+				5564DD222071BF3000D6CA50 /* Frameworks */,
+				5564DD232071BF3000D6CA50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5564DD272071BF3000D6CA50 /* PBXTargetDependency */,
+			);
+			name = ECNetworkServiceUITests;
+			productName = ECNetworkServiceUITests;
+			productReference = 5564DD252071BF3000D6CA50 /* ECNetworkServiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5564DCFA2071BF3000D6CA50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = EvenCheng;
+				TargetAttributes = {
+					5564DD012071BF3000D6CA50 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					5564DD192071BF3000D6CA50 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5564DD012071BF3000D6CA50;
+					};
+					5564DD242071BF3000D6CA50 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5564DD012071BF3000D6CA50;
+					};
+				};
+			};
+			buildConfigurationList = 5564DCFD2071BF3000D6CA50 /* Build configuration list for PBXProject "ECNetworkService" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5564DCF92071BF3000D6CA50;
+			productRefGroup = 5564DD032071BF3000D6CA50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5564DD012071BF3000D6CA50 /* ECNetworkService */,
+				5564DD192071BF3000D6CA50 /* ECNetworkServiceTests */,
+				5564DD242071BF3000D6CA50 /* ECNetworkServiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5564DD002071BF3000D6CA50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5564DD122071BF3000D6CA50 /* LaunchScreen.storyboard in Resources */,
+				5564DD0F2071BF3000D6CA50 /* Assets.xcassets in Resources */,
+				5564DD0D2071BF3000D6CA50 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5564DD182071BF3000D6CA50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5564DD232071BF3000D6CA50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8200E6531E6226B680BC09C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ECNetworkService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8663C46C3E6C8B72EB7DACF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ECNetworkService/Pods-ECNetworkService-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAC62916012E5B3F0311BE88 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ECNetworkService/Pods-ECNetworkService-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5564DCFE2071BF3000D6CA50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5564DD532071BF8C00D6CA50 /* ECBaseParamsModel.m in Sources */,
+				5564DD542071BF8C00D6CA50 /* ECBaseResponseModel.m in Sources */,
+				5564DD552071BF8C00D6CA50 /* ECModel.m in Sources */,
+				5564DD562071BF8C00D6CA50 /* EC_RequestError.m in Sources */,
+				5564DD572071BF8C00D6CA50 /* EC_RequestErrorUtils.m in Sources */,
+				5564DD582071BF8C00D6CA50 /* ECBaseRequest.m in Sources */,
+				5564DD592071BF8C00D6CA50 /* ECHTTPRequest.m in Sources */,
+				5564DD5A2071BF8C00D6CA50 /* ECInterfacedConst.m in Sources */,
+				5564DD5B2071BF8C00D6CA50 /* ECNetworkCache.m in Sources */,
+				5564DD5C2071BF8C00D6CA50 /* ECNetworkHelper.m in Sources */,
+				5564DD5D2071BF8C00D6CA50 /* ECServer.m in Sources */,
+				5564DD0A2071BF3000D6CA50 /* ViewController.m in Sources */,
+				5564DD152071BF3000D6CA50 /* main.m in Sources */,
+				5564DD602071C8DC00D6CA50 /* ECConfig.m in Sources */,
+				5564DD072071BF3000D6CA50 /* AppDelegate.m in Sources */,
+				5564DD632071CA5B00D6CA50 /* TestModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5564DD162071BF3000D6CA50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5564DD1F2071BF3000D6CA50 /* ECNetworkServiceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5564DD212071BF3000D6CA50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5564DD2A2071BF3000D6CA50 /* ECNetworkServiceUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5564DD1C2071BF3000D6CA50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5564DD012071BF3000D6CA50 /* ECNetworkService */;
+			targetProxy = 5564DD1B2071BF3000D6CA50 /* PBXContainerItemProxy */;
+		};
+		5564DD272071BF3000D6CA50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5564DD012071BF3000D6CA50 /* ECNetworkService */;
+			targetProxy = 5564DD262071BF3000D6CA50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5564DD0B2071BF3000D6CA50 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5564DD0C2071BF3000D6CA50 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5564DD102071BF3000D6CA50 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5564DD112071BF3000D6CA50 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5564DD2C2071BF3000D6CA50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5564DD2D2071BF3000D6CA50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5564DD2F2071BF3000D6CA50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A44E06F63D262C6652BE4B44 /* Pods-ECNetworkService.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2Q9RG5SUA;
+				INFOPLIST_FILE = ECNetworkService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EvenCheng.ECNetworkService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5564DD302071BF3000D6CA50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03FB888E9BFC774AD52F083B /* Pods-ECNetworkService.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2Q9RG5SUA;
+				INFOPLIST_FILE = ECNetworkService/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EvenCheng.ECNetworkService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5564DD322071BF3000D6CA50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2Q9RG5SUA;
+				INFOPLIST_FILE = ECNetworkServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EvenCheng.ECNetworkServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECNetworkService.app/ECNetworkService";
+			};
+			name = Debug;
+		};
+		5564DD332071BF3000D6CA50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2Q9RG5SUA;
+				INFOPLIST_FILE = ECNetworkServiceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EvenCheng.ECNetworkServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ECNetworkService.app/ECNetworkService";
+			};
+			name = Release;
+		};
+		5564DD352071BF3000D6CA50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2Q9RG5SUA;
+				INFOPLIST_FILE = ECNetworkServiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EvenCheng.ECNetworkServiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ECNetworkService;
+			};
+			name = Debug;
+		};
+		5564DD362071BF3000D6CA50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N2Q9RG5SUA;
+				INFOPLIST_FILE = ECNetworkServiceUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = EvenCheng.ECNetworkServiceUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ECNetworkService;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5564DCFD2071BF3000D6CA50 /* Build configuration list for PBXProject "ECNetworkService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5564DD2C2071BF3000D6CA50 /* Debug */,
+				5564DD2D2071BF3000D6CA50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5564DD2E2071BF3000D6CA50 /* Build configuration list for PBXNativeTarget "ECNetworkService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5564DD2F2071BF3000D6CA50 /* Debug */,
+				5564DD302071BF3000D6CA50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5564DD312071BF3000D6CA50 /* Build configuration list for PBXNativeTarget "ECNetworkServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5564DD322071BF3000D6CA50 /* Debug */,
+				5564DD332071BF3000D6CA50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5564DD342071BF3000D6CA50 /* Build configuration list for PBXNativeTarget "ECNetworkServiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5564DD352071BF3000D6CA50 /* Debug */,
+				5564DD362071BF3000D6CA50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5564DCFA2071BF3000D6CA50 /* Project object */;
+}
