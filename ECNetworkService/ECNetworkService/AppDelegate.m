@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ECConfig.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [ECConfig shareConfig].environmentType = SEnvironmentTest;
     
     return YES;
 }

@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 #import "ECNetworkCache.h"
 
+@class ECBaseRequest;
+
 #ifndef kIsNetwork
 #define kIsNetwork     [ECNetworkHelper isNetwork]  // 一次性判断是否有网的宏
 #endif
@@ -35,14 +37,14 @@ typedef NS_ENUM(NSUInteger, ECNetworkStatusType) {
 
 typedef NS_ENUM(NSUInteger, ECRequestSerializer) {
     /// 设置请求数据为JSON格式
-    ECRequestSerializerJSON,
+    ECRequestSerializerJSON = 1,
     /// 设置请求数据为二进制格式
     ECRequestSerializerHTTP,
 };
 
 typedef NS_ENUM(NSUInteger, ECResponseSerializer) {
     /// 设置响应数据为JSON格式
-    ECResponseSerializerJSON,
+    ECResponseSerializerJSON = 1,
     /// 设置响应数据为二进制格式
     ECResponseSerializerHTTP,
 };
@@ -51,7 +53,7 @@ typedef NS_ENUM(NSUInteger, ECResponseSerializer) {
 typedef void(^ECHttpRequestSuccess)(id responseObject);
 
 /// 请求失败的Block
-typedef void(^ECHttpRequestFailed)(NSError *error);
+typedef void(^ECHttpRequestFailed)(NSError *error,NSString* des,NSInteger statusCode);
 
 /// 缓存的Block
 typedef void(^ECHttpRequestCache)(id responseCache);
@@ -89,70 +91,21 @@ typedef void(^ECNetworkStatus)(ECNetworkStatusType status);
 /// 关闭日志打印,默认关闭
 + (void)closeLog;
 
-
 /**
- *  GET请求,无缓存
+ *  网络请求
  *
- *  @param URL        请求地址
- *  @param parameters 请求参数
- *  @param success    请求成功的回调
- *  @param failure    请求失败的回调
+ *  @param request          请求对象
+ *  @param responseCache    缓存block
+ *  @param success          网络请求成功
+ *  @param failure          网络请求失败
  *
  *  @return 返回的对象可取消请求,调用cancel方法
  */
-+ (__kindof NSURLSessionTask *)GET:(NSString *)URL
-                        parameters:(id)parameters
-                           success:(ECHttpRequestSuccess)success
-                           failure:(ECHttpRequestFailed)failure;
++ (__kindof NSURLSessionTask *)request:(ECBaseRequest *)request
+                         responseCache:(ECHttpRequestCache)responseCache
+                               success:(ECHttpRequestSuccess)success
+                               failure:(ECHttpRequestFailed)failure;
 
-/**
- *  GET请求,自动缓存
- *
- *  @param URL           请求地址
- *  @param parameters    请求参数
- *  @param responseCache 缓存数据的回调
- *  @param success       请求成功的回调
- *  @param failure       请求失败的回调
- *
- *  @return 返回的对象可取消请求,调用cancel方法
- */
-+ (__kindof NSURLSessionTask *)GET:(NSString *)URL
-                        parameters:(id)parameters
-                     responseCache:(ECHttpRequestCache)responseCache
-                           success:(ECHttpRequestSuccess)success
-                           failure:(ECHttpRequestFailed)failure;
-
-/**
- *  POST请求,无缓存  
- *
- *  @param URL        请求地址
- *  @param parameters 请求参数
- *  @param success    请求成功的回调
- *  @param failure    请求失败的回调
- *
- *  @return 返回的对象可取消请求,调用cancel方法
- */
-+ (__kindof NSURLSessionTask *)POST:(NSString *)URL
-                         parameters:(id)parameters
-                            success:(ECHttpRequestSuccess)success
-                            failure:(ECHttpRequestFailed)failure;
-
-/**
- *  POST请求,自动缓存
- *
- *  @param URL           请求地址
- *  @param parameters    请求参数
- *  @param responseCache 缓存数据的回调
- *  @param success       请求成功的回调
- *  @param failure       请求失败的回调
- *
- *  @return 返回的对象可取消请求,调用cancel方法
- */
-+ (__kindof NSURLSessionTask *)POST:(NSString *)URL
-                         parameters:(id)parameters
-                      responseCache:(ECHttpRequestCache)responseCache
-                            success:(ECHttpRequestSuccess)success
-                            failure:(ECHttpRequestFailed)failure;
 
 /**
  *  上传文件
@@ -254,6 +207,9 @@ typedef void(^ECNetworkStatus)(ECNetworkStatusType status);
 
 /// 设置请求头
 + (void)setValue:(NSString *)value forHTTPHeaderField:(NSString *)field;
+
+/// 根据url设置请求头
++ (void)setHttpHeaderField:(ECBaseRequest *)request;
 
 /**
  *  是否打开网络状态转圈菊花:默认打开

@@ -15,6 +15,7 @@ static YYCache *_dataCache;
 
 + (void)initialize {
     _dataCache = [YYCache cacheWithName:kECNetworkResponseCache];
+    _dataCache.diskCache.ageLimit = 60*60*24*7;
 }
 
 + (void)setHttpCache:(id)httpData URL:(NSString *)URL parameters:(NSDictionary *)parameters {

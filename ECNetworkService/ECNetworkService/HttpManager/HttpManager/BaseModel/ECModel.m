@@ -1,13 +1,13 @@
 //
-//  ECBaseParamsModel.m
+//  ECModel.m
 //  EC
 //
 //  Created by Even on 2018/3/1.
 //  Copyright © 2018年 Even-Cheng. All rights reserved.
 //
 
-#import "ECBaseParamsModel.h"
+#import "ECModel.h"
 
-@implementation ECBaseParamsModel
+@implementation ECModel
 
 @end

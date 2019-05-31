@@ -10,13 +10,5 @@
 
 @implementation ECBaseResponseModel
 
-+ (NSDictionary *)JSONKeyPathsByPropertyKey {
-    
-    return @{@"code":@"code",
-             @"desc":@"desc",
-             @"serverTime":@"serverTime",
-             @"success":@"success"
-             };
-}
 
 @end

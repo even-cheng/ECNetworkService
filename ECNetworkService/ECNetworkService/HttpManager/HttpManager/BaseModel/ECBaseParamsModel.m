@@ -1,15 +1,14 @@
 //
-//  ECModel.h
+//  ECBaseParamsModel.m
 //  EC
 //
 //  Created by Even on 2018/3/1.
 //  Copyright © 2018年 Even-Cheng. All rights reserved.
 //
 
-#import "MTLModel.h"
-#import "MTLJSONAdapter.h"
+#import "ECBaseParamsModel.h"
 
-@interface ECModel : MTLModel<MTLJSONSerializing>
-
-
+@implementation ECBaseParamsModel
+    
+    
 @end

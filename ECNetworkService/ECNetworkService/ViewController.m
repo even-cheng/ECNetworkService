@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "TestModel.h"
+#import "UserInfoModel.h"
 #import "ECServer.h"
 
 @interface ViewController ()
@@ -27,20 +27,16 @@
 
 -(void)loadCardShopDatas{
 
-    TestModel* model = [TestModel new];
-    model.title = @"test";
-    model.pageNumber = @10;
-    [ECServer getTestDatasWithParameterModel:model complete:^(EC_RequestError *error, ECBaseResponseModel *response) {
-    
+    [ECServer requestWithAPI:APITypeWithGetUserInfo andParams:@{@"userId":@"0"} andAnalysisClass:NSClassFromString(@"UserInfoModel") withComplete:^(EC_RequestError *error, ECBaseResponseModel *response) {
         if (error) {
-            NSLog(@"%@",error.getMsg);
             return ;
         }
-        
-        TestResponseModel* responseModel = (TestResponseModel*)response;
-        
-        //拿到数据刷新UI
-        
+        if (response.isCache) {
+            NSLog(@"这是缓存数据");
+        } else {
+            NSLog(@"这是实时数据");
+        }
+        UserInfoModel* user = response.data;
     }];
 }
 
